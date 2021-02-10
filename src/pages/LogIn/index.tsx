@@ -13,7 +13,7 @@ const LogIn: React.FC = () => {
   const handleSubmit = useCallback(async (e) => {
     e.preventDefault();
     
-    const response = await logIn({email, password});
+    await logIn({email, password});
   },[email, password, logIn]);
 
   return (

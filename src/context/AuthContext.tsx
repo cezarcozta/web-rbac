@@ -8,7 +8,7 @@ interface IAuthContextState {
   logOut: () => void;
 };
 
-interface IUserData {
+export interface IUserData {
   email: string;
   password: string;
 }
