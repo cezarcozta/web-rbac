@@ -1,11 +1,11 @@
-import React, { useCallback, useState, useContext } from 'react';
+import React, { useCallback, useState } from 'react';
 
-import { AuthContext }  from '../../context/AuthContext';
+import { useAuth }  from '../../context/AuthContext';
 
 import { Container } from './styles';
 
 const LogIn: React.FC = () => {
-  const { logIn } = useContext(AuthContext);
+  const { logIn } = useAuth();
 
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
